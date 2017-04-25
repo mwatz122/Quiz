@@ -21,32 +21,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H05-5d-RPz">
-                                <rect key="frame" x="166" y="54" width="25" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H05-5d-RPz">
+                                <rect key="frame" x="175" y="28" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ae-BJ-afz">
-                                <rect key="frame" x="166" y="323" width="25" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ae-BJ-afz">
+                                <rect key="frame" x="175" y="297" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6td-1M-fWH">
-                                <rect key="frame" x="132" y="361" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Show Answer"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUz-qh-QJu">
-                                <rect key="frame" x="129" y="94" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUz-qh-QJu">
+                                <rect key="frame" x="138" y="68" width="98" height="30"/>
                                 <state key="normal" title="Next Question"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6td-1M-fWH">
+                                <rect key="frame" x="141" y="335" width="93" height="30"/>
+                                <state key="normal" title="Show Answer"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="H05-5d-RPz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="1Ia-8e-iC3"/>
+                            <constraint firstItem="6td-1M-fWH" firstAttribute="centerX" secondItem="QUz-qh-QJu" secondAttribute="centerX" id="M0N-0A-ahB"/>
+                            <constraint firstItem="H05-5d-RPz" firstAttribute="centerX" secondItem="QUz-qh-QJu" secondAttribute="centerX" id="VXg-9C-eJn"/>
+                            <constraint firstItem="H05-5d-RPz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eFL-ba-aGf"/>
+                            <constraint firstItem="4ae-BJ-afz" firstAttribute="centerX" secondItem="QUz-qh-QJu" secondAttribute="centerX" id="erd-9v-vJb"/>
+                            <constraint firstItem="6td-1M-fWH" firstAttribute="top" secondItem="4ae-BJ-afz" secondAttribute="bottom" constant="17" id="fX8-r1-i6A"/>
+                            <constraint firstItem="4ae-BJ-afz" firstAttribute="top" secondItem="QUz-qh-QJu" secondAttribute="bottom" constant="199" id="xaC-IV-5Os"/>
+                            <constraint firstItem="QUz-qh-QJu" firstAttribute="top" secondItem="H05-5d-RPz" secondAttribute="bottom" constant="19" id="y8n-Hf-3lR"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
